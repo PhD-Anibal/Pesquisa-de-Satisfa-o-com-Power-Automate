@@ -7,7 +7,7 @@ Para isso, é utilizado o Google Forms como plataforma de pesquisa online, crian
 
 As respostas coletadas são integradas em um Google Sheets e, em seguida, são processadas no Microsoft Power BI. Após um processo de ETL (Extração, Transformação e Carga) dos dados, eles são apresentados em um Dashboard, permitindo a extração de insights e análise dos resultados da pesquisa de satisfação.
 
-![sequências de etapas do robô](https://github.com/PhD-Anibal/Automa-na-Extra-de-Dados/assets/128927981/1167e394-ef06-4071-a1a0-cfdbece71ead)
+![processo](https://github.com/PhD-Anibal/link)
 
 ## O processo ocorre da seguinte maneira:
 A clínica "Saúde Total" possui uma planilha em Microsoft Excel com os dados dos pacientes internados. Em um horário determinado o Microsoft Power Automate consulta a planilha se algum paciente recebeu alta.
