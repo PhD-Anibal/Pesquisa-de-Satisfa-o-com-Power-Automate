@@ -22,4 +22,20 @@ As respostas do formulário preenchem uma planilha do Google Sheets, que está c
 O Dashboard feito inclui dados como o Net Promoter Score (NPS), a quantidade de pacientes que receberam o e-mail, a quantidade de pacientes que responderam o formulário e a porcentagem de respostas. Além disso, são apresentados gráficos sobre a qualidade do atendimento e a acessibilidade aos serviços, pudendo todos os dados serem filtrados por datas em que foram recebido os Feedbacks.
 
 
+# Robô
 
+Para funcionar o robô que executara o fluxo no Power Automate é necessario a biblioteca PyAutoGUI instalada 
+
+![fluxo do processo](1pyautogui.png)
+
+Para saber onde o mouse tem que fazer click no Power Automate para iniciar o fluxo abrimos o Power Automate e com este código descobrimos essa posição
+
+![fluxo do processo](2posicao_mouse.png)
+
+O programa feito em Python será executado pelo arquivo do sistema python.exe, com este código descobrimos onde fica no computador para indicar no Agendador de Tarefas do Windows como executar o robô
+
+![fluxo do processo](3executar_robo.png)
+
+Finalmente o código do robô que o que faz é abrir o Power Automate Desktop e posteriormente faz Click na posição do botão que executa o fluxo. O código é salvo com o nome ExecutaFluxo.py e adicionado seu nome com a localização no Agendador de Tarefas
+
+![fluxo do processo](4robo.png)
