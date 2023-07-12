@@ -32,6 +32,10 @@ Para saber onde o mouse tem que fazer click no Power Automate para iniciar o flu
 
 ![fluxo do processo](2posicao_mouse.png)
 
+O código da um tempo de 5 segundos de espera até capturar a posição do mouse, em esse tempo o mouse temos que posicionar no botão de executar o fluxo
+
+![fluxo do processo](5posicao_mouse2.png)
+
 O programa feito em Python será executado pelo arquivo do sistema python.exe, com este código descobrimos onde fica no computador para indicar no Agendador de Tarefas do Windows como executar o robô
 
 ![fluxo do processo](3executar_robo.png)
@@ -39,3 +43,7 @@ O programa feito em Python será executado pelo arquivo do sistema python.exe, c
 Finalmente o código do robô que o que faz é abrir o Power Automate Desktop e posteriormente faz Click na posição do botão que executa o fluxo. O código é salvo com o nome ExecutaFluxo.py e adicionado seu nome com a localização no Agendador de Tarefas
 
 ![fluxo do processo](4robo.png)
+
+# Fluxo no Power Automate
+
+![fluxo do processo](6fluxo_power_automate.png)
