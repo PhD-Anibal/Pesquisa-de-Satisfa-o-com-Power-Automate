@@ -76,3 +76,8 @@ Finalmente o código do robô que o que faz é abrir o Power Automate Desktop e 
 # Fluxo no Power Automate
 
 ![fluxo do processo](6fluxo_power_automate.png)
+
+# Dashboard
+[link](https://app.powerbi.com/reportEmbed?reportId=1f77ef68-cfc1-456b-943c-24ed59641a90&autoAuth=true&ctid=8f10e124-8279-4297-9805-457da5eea6f1)
+
+![Dashboard em Power BI](9dashboard.png)
