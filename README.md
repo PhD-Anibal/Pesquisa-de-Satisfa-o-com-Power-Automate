@@ -21,6 +21,35 @@ As respostas do formulário preenchem uma planilha do Google Sheets, que está c
 
 O Dashboard feito inclui dados como o Net Promoter Score (NPS), a quantidade de pacientes que receberam o e-mail, a quantidade de pacientes que responderam o formulário e a porcentagem de respostas. Além disso, são apresentados gráficos sobre a qualidade do atendimento e a acessibilidade aos serviços, pudendo todos os dados serem filtrados por datas em que foram recebido os Feedbacks.
 
+# Prontuario
+
+O prontuario em Excel contem os seguintes dados de cada paciente:
+
+- Nome: Nome do paciente
+- e-mail: e-mail do paciente
+- Doença: diagnóstico do paciente
+- Data de Entrada: data em que o paciente foi internado
+- Data de Alta: caso o paciente tenha sido dado de alta este campo terá essa data
+- Form Enviado: se ao paciente foi enviado o formulario tem o valor "sim" caso contrario o campo estará vazio
+
+Na seguinte imagem é apresentada uma amostra do prontuario indicando com cores a situação de cada paciente
+
+![prontuario](7prontuario.png)
+
+
+# Formulário
+
+O formulario elaborado com Google Forms que receberá cada paciente depois de ter alta médica contem as seguintes questões:
+- Qualidade do Atendimento
+- Acessibilidade aos Serviços
+- Em uma escala de 0 a 10, o quanto você recomendaria nossa instituição para um amigo ou familiar?
+- Feedback
+- Sugestões de melhorias
+
+A seguinte imagem é uma amostra do formulário que se encontra no seguinte [link]( https://forms.gle/oMfejxLoXWriz8Jy5)
+
+
+![form](8form_google.png)
 
 # Robô
 
