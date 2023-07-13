@@ -21,6 +21,20 @@ As respostas do formulário preenchem uma planilha do Google Sheets, que está c
 
 O Dashboard feito inclui dados como o Net Promoter Score (NPS), a quantidade de pacientes que receberam o e-mail, a quantidade de pacientes que responderam o formulário e a porcentagem de respostas. Além disso, são apresentados gráficos sobre a qualidade do atendimento e a acessibilidade aos serviços, pudendo todos os dados serem filtrados por datas em que foram recebido os Feedbacks.
 
+# Formulário
+
+O formulario elaborado com Google Forms que receberá cada paciente depois de ter alta médica contem as seguintes questões:
+- Qualidade do Atendimento
+- Acessibilidade aos Serviços
+- Em uma escala de 0 a 10, o quanto você recomendaria nossa instituição para um amigo ou familiar?
+- Feedback
+- Sugestões de melhorias
+
+A seguinte imagem é uma amostra do formulário que se encontra no seguinte [link]( https://forms.gle/oMfejxLoXWriz8Jy5)
+
+![form](8form_google.png)
+
+
 # Prontuario
 
 O prontuario em Excel contem os seguintes dados de cada paciente:
@@ -36,48 +50,44 @@ Na seguinte imagem é apresentada uma amostra do prontuario indicando com cores 
 
 ![prontuario](7prontuario.png)
 
+# Fluxo no Power Automate
 
-# Formulário
+O fluxo de trabalho é progamado para revisar a situação dos pacientes na planilha do prontuario, sendo o gatilho que acionará o envio dos e-mails com o formulário de pesquisa de satisfação quando encontra algum paciente ao que não foi enviado o formulário e tem data de alta médica..
 
-O formulario elaborado com Google Forms que receberá cada paciente depois de ter alta médica contem as seguintes questões:
-- Qualidade do Atendimento
-- Acessibilidade aos Serviços
-- Em uma escala de 0 a 10, o quanto você recomendaria nossa instituição para um amigo ou familiar?
-- Feedback
-- Sugestões de melhorias
-
-A seguinte imagem é uma amostra do formulário que se encontra no seguinte [link]( https://forms.gle/oMfejxLoXWriz8Jy5)
-
-
-![form](8form_google.png)
+![fluxo no_Power_Automate](6fluxo_power_automate.png)
 
 # Robô
 
 Para funcionar o robô que executara o fluxo no Power Automate é necessario a biblioteca PyAutoGUI instalada 
 
-![fluxo do processo](1pyautogui.png)
+![Robô](1pyautogui.png)
 
 Para saber onde o mouse tem que fazer click no Power Automate para iniciar o fluxo abrimos o Power Automate e com este código descobrimos essa posição
 
-![fluxo do processo](2posicao_mouse.png)
+![Posição_do_mouse](2posicao_mouse.png)
 
 O código da um tempo de 5 segundos de espera até capturar a posição do mouse, em esse tempo o mouse temos que posicionar no botão de executar o fluxo
 
-![fluxo do processo](5posicao_mouse2.png)
+![Posição_do_mouse2](5posicao_mouse2.png)
 
 O programa feito em Python será executado pelo arquivo do sistema python.exe, com este código descobrimos onde fica no computador para indicar no Agendador de Tarefas do Windows como executar o robô
 
-![fluxo do processo](3executar_robo.png)
+![Execução_do Robô](3executar_robo.png)
 
-Finalmente o código do robô que o que faz é abrir o Power Automate Desktop e posteriormente faz Click na posição do botão que executa o fluxo. O código é salvo com o nome ExecutaFluxo.py e adicionado seu nome com a localização no Agendador de Tarefas
+Com o seguinte código do robô é inicializado o Power Automate Desktop e posteriormente faz Click na posição do botão que executa o fluxo. O código é salvo com o nome ExecutaFluxo.py e adicionado seu nome com a localização no Agendador de Tarefas
 
 ![fluxo do processo](4robo.png)
 
-# Fluxo no Power Automate
-
-![fluxo do processo](6fluxo_power_automate.png)
-
 # Dashboard
+
+O Dashboard contem:
+- Valores de KPI's como o Total de Feedbacks recebidos pelos pacientes ao prencer o formulário, o Total de consultas nas quais o paciente recebeu o formulário e a Porcentagem de Respostas obtidas.
+- Gráficos de barras interativos apresentando o grau de satisfação dos pacientes na Acessibilidade aos Serviços e Qualidade do Atendimento
+- Satisfação e lealdade dos clientes apresentado usando um gráfico indicador do NPS (Net Promoter Score) 
+- Gráfico de linhas interativo apresentando a relação nas respostas de Qualidade no Atendimento com o passar do tempo
+- Filtro que permite alterar o período em que os valores do dashboard são analizados
+
+
 [link](https://app.powerbi.com/reportEmbed?reportId=1f77ef68-cfc1-456b-943c-24ed59641a90&autoAuth=true&ctid=8f10e124-8279-4297-9805-457da5eea6f1)
 
 ![Dashboard em Power BI](9dashboard.png)
