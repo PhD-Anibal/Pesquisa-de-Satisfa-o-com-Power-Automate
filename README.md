@@ -1,13 +1,13 @@
 # Pesquisa-de-Satisfação-com-Power-Automate
 
 ## Resumo
-Os principais objetivos da pesquisa de satisfação são avaliar a qualidade dos serviços de saúde prestados, medir a satisfação dos pacientes em relação ao atendimento recebido e identificar áreas de melhoria.
+Os principais objetivos da pesquisa de satisfação são avaliar a qualidade dos serviços de saúde prestados, medir a satisfação dos pacientes em relação ao atendimento recebido e identificar áreas de melhoria pela clínica Saúde Total.
 
 Para isso, é utilizado o Google Forms como plataforma de pesquisa online, criando um questionário conciso e fácil de responder. Um novo fluxo de trabalho é configurado no Power Automate, sendo acionado pelo horário programado para consultar a planilha de prontuários no Excel. Se houver registro de alta médica, o Power Automate envia um e-mail personalizado ao paciente com o link do formulario.
 
 As respostas coletadas são integradas em um Google Sheets e, em seguida, são processadas no Microsoft Power BI. Após um processo de ETL (Extração, Transformação e Carga) dos dados, eles são apresentados em um Dashboard, permitindo a extração de insights e análise dos resultados da pesquisa de satisfação.
 
-![fluxo do processo](fluxo.png)
+![Apresentação](0apresentacao.png)
 
 ## O processo de automação é uma combinação de tecnologias e ocorre da seguinte maneira:
 
