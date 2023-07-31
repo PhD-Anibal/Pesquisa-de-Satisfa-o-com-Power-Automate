@@ -9,6 +9,16 @@ As respostas coletadas são integradas em um Google Sheets e, em seguida, são p
 
 ![Apresentação](0apresentacao.png)
 
+## TLDR
+
+Prontuario: Arquivo de Excel demo [link](prontuario.xlsx);
+
+Robô: Código em Python [link](ExecutaFluxo.py);
+
+Feedback: Formulario feito em Google Form [link](https://forms.gle/oMfejxLoXWriz8Jy5);
+
+Dashboard: Apresentação de resultados em Power BI conectado no Google Sheet do Feedback [link](https://app.powerbi.com/reportEmbed?reportId=1f77ef68-cfc1-456b-943c-24ed59641a90&autoAuth=true&ctid=8f10e124-8279-4297-9805-457da5eea6f1).
+
 ## O processo de automação é uma combinação de tecnologias e ocorre da seguinte maneira:
 
 ![fluxo do processo](fluxo.png)
